@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    font-family:cursive;
+    background-image: url("https://t4.ftcdn.net/jpg/03/90/59/01/360_F_390590126_EhbLdRZ2w9q7j7dzycPBcHQB0P75ZvJd.jpg" );
+    background-position: center center;
+    /*filter: blur(5px);*/
+    display:flex;
+    background-size:cover;
+    justify-content: center;
+    
+}
+
+h2{
+    color:rgb(169, 251, 68);
+    font-size:50px ;
+    font-family:monospace;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+.year{
+    font-size: 5em;
+    color:rgb(140, 240, 243);
+    font-weight: bold;
+}
+
+.countdown{
+    margin: 30px;
+    background-image: linear-gradient(to right,brown,red ,orange,yellow,gold,green,grey,blue,purple);
+    /* syntax -gradient background-image: linear-gradient(direction, color-stop1, color-stop2, ...);*/
+    width:90%;
+    color:brown;
+    height:120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.countdown div{
+    margin: 0 15 px;
+    font-size: 2.8em;
+    margin-top: -25;
+    position:relative;
+    text-align:center;
+    width: 100px;
+    justify-content: center;
+}
+
+.countdown div::before{
+    content:"";
+    position: absolute;
+    bottom:-30px;
+    left:0;
+    font-size: .35em;
+    line-height:35 px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    height:35;
+
+}
+.countdown #day::before{
+    content:"Days";
+}
+
+.countdown #hour::before{
+    content:"Hours";
+}
+
+.countdown #minute::before{
+    content:"Minutes";
+}
+
+.countdown #second::before{
+    content:"seconds"
+}
